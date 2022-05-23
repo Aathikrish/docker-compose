@@ -1,0 +1,6 @@
+3 Tier architecture is as follows 
+++++++++++++++++++++++++++
+
+DB layer: Percona DB is deployed with a common mount volume in the server.
+ App Layer : Both applications running on Python, app1, and app2  are  connected to the common DB 
+Web Layer or Loadbalancer layer: Ngnix load balancer will act as the ingress controller and will route the traffic uniformly among the applications connected to it.
